@@ -59,6 +59,7 @@ const serverCallBack = (req, res) => {
     for (let contorl of contorllist) {
         if (url.startsWith("/" + contorl.name)) {
             contorl.func(req, res)
+            break;
         }
     }
 
